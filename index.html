@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+  </head>
+
+  <body>
+    <h1>US Domestic Flights</h1>
+    <form>
+
+      <fieldset>
+        <legend>Flight Details</legend>
+        <div class="input-group">
+          <label for="departure">Departure (*):</label>
+          <select id="departure" title="Departure" required>
+            <option>Departure City...</option>
+            <option>Boston</option>
+            <option>Los Angeles</option>
+            <option>New York</option>
+            <option>Phoenix</option>
+            <option>San Diego</option>
+            <option>Santa Barbara</option>
+            <option>Tijuana</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="destination">Destination (*):</label>
+          <select id="destination" title="Destination" required>
+            <option>Destination City...</option>
+            <option>Boston</option>
+            <option>Los Angeles</option>
+            <option>New York</option>
+            <option>Phoenix</option>
+            <option>San Diego</option>
+            <option>Santa Barbara</option>
+            <option>Tijuana</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" id="one-way" title="One Way">
+          <label for="one-way">One Way</label>
+        </div>
+        <div class="input-group">
+          <label for="departure-date">Dep. Date (*):</label>
+          <input type="date" id="departure-date" title="Departure Date">
+        </div>
+        <div class="input-group">
+          <label for="return-date">Ret. Date:</label>
+          <input type="date" id="return-date" title="Return Date">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <div class="input-group">
+          <label for="email">Email (*):</label>
+          <input type="email" id="email" title="TODO">
+        </div>
+        <div class="input-group">
+          <label for="mobile">Mobile (*):</label>
+          <input type="text" id="mobile" title="TODO">
+        </div>
+        <div class="input-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" title="TODO">
+        </div>
+        <div class="input-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" title="TODO">
+        </div>
+        <div class="input-group">
+          <label for="zip-code">Zip Code:</label>
+          <input type="text" id="zip-code" title="TODO">
+        </div>
+        <div class="input-group">
+          <label for="country">Country:</label>
+          <select id="country" required>
+            <option>Select Country...</option>
+            <option>Greece</option>
+            <option>Cyprus</option>
+            <option>Finland</option>
+
+          </select>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+      </fieldset>
+      <input type="submit" value="Go">
+    </form>
+
+  </body>
+
+</html>
