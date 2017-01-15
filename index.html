@@ -40,9 +40,11 @@
           </select>
         </div>
 
-        <div class="input-group checkbox-group">
-          <input type="checkbox" id="one-way" title="One Way">
-          <label for="one-way">One Way</label>
+        <div class="checkbox-group">
+          <div class="input-group">
+            <input type="checkbox" id="one-way" title="One Way">
+            <label for="one-way">One Way</label>
+          </div>
         </div>
         <div class="input-group">
           <label for="departure-date">Dep. Date (*):</label>
@@ -81,9 +83,17 @@
           <label for="country">Country:</label>
           <select id="country" required>
             <option>Select Country...</option>
-            <option>Greece</option>
-            <option>Cyprus</option>
-            <option>Finland</option>
+            <optgroup label="Developed">
+              <option>Greece</option>
+              <option>Cyprus</option>
+              <option>Finland</option>
+              <option>USA</option>
+            </optgroup>
+            <optgroup label="Developing">
+              <option>Morocco</option>
+              <option>Pakistan</option>
+              <option>Zimbabwe</option>
+            </optgroup>
 
           </select>
         </div>
@@ -100,33 +110,41 @@
         <fieldset>
           <legend>Passenger #1</legend>
           <div class="input-group">
-            <label for="email">Email (*):</label>
-            <input type="email" id="email" title="TODO">
+            <label for="first-name">First Name (*):</label>
+            <input type="text" id="first-name" title="First Name">
           </div>
           <div class="input-group">
-            <label for="mobile">Mobile (*):</label>
-            <input type="text" id="mobile" title="TODO">
+            <label for="last-name">Last Name (*):</label>
+            <input type="text" id="last-name" title="Last Name">
           </div>
           <div class="input-group">
-            <label for="address">Address:</label>
-            <input type="text" id="address" title="TODO">
+            <label for="passport">Passport (*):</label>
+            <input type="text" id="passport" title="Passport">
           </div>
           <div class="input-group">
-            <label for="city">City:</label>
-            <input type="text" id="city" title="TODO">
+            <label for="birthdate">DoB (*):</label>
+            <input type="date" id="birthdate" title="Birthdate">
           </div>
-          <div class="input-group">
-            <label for="zip-code">Zip Code:</label>
-            <input type="text" id="zip-code" title="TODO">
+          <div class="radio-group">
+            <div class="input-group">
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" title="Male">
+            </div>
+            <div class="input-group">
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" title="Female">
+            </div>
           </div>
           <div class="input-group">
             <label for="country">Country:</label>
             <select id="country" required>
             <option>Select Country...</option>
-            <option>Greece</option>
-            <option>Cyprus</option>
-            <option>Finland</option>
-
+            <optgroup label="Developed">
+              <option>Greece</option>
+              <option>Cyprus</option>
+              <option>Finland</option>
+              <option>USA</option>
+            </optgroup>
           </select>
           </div>
 

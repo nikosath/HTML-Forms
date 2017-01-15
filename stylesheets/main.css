@@ -52,3 +52,12 @@ select {
   text-align: left;
   width: 20rem;
 }
+
+.radio-group .input-group {
+  display: inline;
+
+}
+.radio-group input {
+  width: auto;
+
+}
