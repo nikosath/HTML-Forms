@@ -13,33 +13,42 @@ body {
   text-align: center;
 }
 fieldset {
-  width: 400px;
+  width: 40rem;
   margin: 0 auto;
   /*display: inline-block;*/
   /*text-align: center;*/
 }
 .input-group {
-  margin-bottom: 10px;
-  /*padding-bottom: 100px;*/
+  margin: 0 auto 1rem;
+  width: 34rem;
+  text-align: right;
 }
 
 legend {
   text-align: left;
-  margin: 0 0 10px 10px;
+  margin: 0 0 1rem 0.5rem;
+  padding: 0 1rem;
 }
 
 label {
   display: inline-block;
-  text-align: right;
-  width: 140px;
+  /*text-align: right;*/
+  /*width: 14rem;*/
 }
+
 input,
 select {
-  width: 200px;
-  /*text-align: right;*/
+  width: 20rem;
 
 }
-/*
-.placeholder {
-  display: none;
-}*/
+
+/*In order to get proper x-axis alignment for the checkbox group, I had to deviate from my default width values for its input and label elements*/
+.checkbox-group input {
+  text-align: right;
+  width: auto;
+}
+
+.checkbox-group label {
+  text-align: left;
+  width: 20rem;
+}
