@@ -10,6 +10,7 @@
   <body>
     <h1>US Domestic Flights</h1>
     <form>
+    <div class="fieldset-container">
 
       <fieldset>
         <legend>Flight Details</legend>
@@ -100,57 +101,84 @@
 
       </fieldset>
 
-      <fieldset>
+    </div>
+      <fieldset class="fieldset-container">
+        <legend>Ticket Details</legend>
 
         <div class="input-group">
           <label for="tickets-quantity"># of Tickets</label>
-          <input type="number" id="tickets-quantity" title="# of Tickets" value="1" min="1" max="10">
+          <input type="number" id="tickets-quantity" title="Quantity of Tickets" value="1" min="1" max="10">
         </div>
 
         <fieldset>
           <legend>Passenger #1</legend>
           <div class="input-group">
-            <label for="first-name">First Name (*):</label>
-            <input type="text" id="first-name" title="First Name">
+            <label for="passenger1-first-name">First Name (*):</label>
+            <input type="text" id="passenger1-first-name" title="First Name">
           </div>
           <div class="input-group">
-            <label for="last-name">Last Name (*):</label>
-            <input type="text" id="last-name" title="Last Name">
+            <label for="passenger1-last-name">Last Name (*):</label>
+            <input type="text" id="passenger1-last-name" title="Last Name">
           </div>
           <div class="input-group">
-            <label for="passport">Passport (*):</label>
-            <input type="text" id="passport" title="Passport">
+            <label for="passenger1-passport">Passport (*):</label>
+            <input type="text" id="passenger1-passport" title="Passport">
           </div>
           <div class="input-group">
-            <label for="birthdate">DoB (*):</label>
-            <input type="date" id="birthdate" title="Birthdate">
+            <label for="passenger1-birthdate">DoB (*):</label>
+            <input type="date" id="passenger1-birthdate" title="Birthdate">
           </div>
           <div class="radio-group">
             <div class="input-group">
-              <label for="male">Male</label>
-              <input type="radio" id="male" name="gender" title="Male">
+              <label for="passenger1-male">Male</label>
+              <input type="radio" id="passenger1-male" name="passenger1-gender" title="Male" checked>
             </div>
             <div class="input-group">
-              <label for="female">Female</label>
-              <input type="radio" id="female" name="gender" title="Female">
+              <label for="passenger1-female">Female</label>
+              <input type="radio" id="passenger1-female" name="passenger1-gender" title="Female">
             </div>
           </div>
+
+        </fieldset>
+        <fieldset>
+          <legend>Passenger #2</legend>
           <div class="input-group">
-            <label for="country">Country:</label>
-            <select id="country" required>
-            <option>Select Country...</option>
-            <optgroup label="Developed">
-              <option>Greece</option>
-              <option>Cyprus</option>
-              <option>Finland</option>
-              <option>USA</option>
-            </optgroup>
-          </select>
+            <label for="passenger2-first-name">First Name:</label>
+            <input type="text" id="passenger2-first-name" title="First Name">
+          </div>
+          <div class="input-group">
+            <label for="passenger2-last-name">Last Name:</label>
+            <input type="text" id="passenger2-last-name" title="Last Name">
+          </div>
+          <div class="input-group">
+            <label for="passenger2-passport">Passport:</label>
+            <input type="text" id="passenger2-passport" title="Passport">
+          </div>
+          <div class="input-group">
+            <label for="passenger2-birthdate">DoB:</label>
+            <input type="date" id="passenger2-birthdate" title="Birthdate">
+          </div>
+          <div class="radio-group">
+            <div class="input-group">
+              <label for="passenger2-male">Male</label>
+              <input type="radio" id="passenger2-male" name="passenger2-gender" title="Male" checked>
+            </div>
+            <div class="input-group">
+              <label for="passenger2-female">Female</label>
+              <input type="radio" id="passenger2-female" name="passenger2-gender" title="Female">
+            </div>
           </div>
 
         </fieldset>
 
       </fieldset>
+
+      <div>
+      <!-- <div class="input-group"> -->
+        <label for="message">Your Message To Booking Agent</label>
+        <textarea id="message" rows="6" title="Message"></textarea>
+      </div>
+
       <input type="submit" value="Go">
     </form>
 

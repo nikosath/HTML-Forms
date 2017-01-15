@@ -12,10 +12,17 @@ body {
   font-size: 1.6em;
   text-align: center;
 }
+
+h1 {
+  margin-bottom: 3rem;
+}
+
 fieldset {
   width: 40rem;
-  margin: 0 auto;
-  /*display: inline-block;*/
+  margin: 0 1rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+
   /*text-align: center;*/
 }
 .input-group {
@@ -42,6 +49,7 @@ select {
 
 }
 
+/* TODO: comments */
 /*In order to get proper x-axis alignment for the checkbox group, I had to deviate from my default width values for its input and label elements*/
 .checkbox-group input {
   text-align: right;
@@ -54,10 +62,22 @@ select {
 }
 
 .radio-group .input-group {
-  display: inline;
+  display: inline-block;
+  width: auto;
+  /*margin-bottom: 3rem;*/
 
 }
 .radio-group input {
   width: auto;
 
+}
+
+input[type='number'] {
+  text-align: right;
+}
+
+.fieldset-container {
+  width: auto;
+  /*display: inline-block;*/
+  margin: 0 auto 2rem; // fieldset DRY
 }
