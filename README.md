@@ -1,3 +1,3 @@
 # HTML-Forms
 
-Practising making Forms!
+Practicing making HTML Forms!
